@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --blue: #0594cb;
+  --color-primary: var(--blue);
+  --color-code: var(--color-gray-50); /* Code background. */
+  --font-sans: "Mulish", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  @apply antialiased font-sans text-gray-900;
+}
